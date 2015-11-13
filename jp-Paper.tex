@@ -67,15 +67,17 @@ Ethereum implements this paradigm in a generalised manner. Furthermore it provid
 
 \section{Introduction} \label{sec:introduction}
 
-世界中の数多の土地でインターネットがありふれると共に、地球内の情報転送が信じられないほどに安くなりました。
-ビットコインのような技術志向の動向によって、
-Technology-rooted movements like Bitcoin have demonstrated,
-through the power of the default,
-consensus mechanisms and voluntary respect of the social contract
-that it is possible to use the internet to make a decentralised value-transfer system,
-shared across the world and virtually free to use.
-This system can be said to be a very specialised version of a cryptographically secure,
-transaction-based state machine.
+
+世界中の数多の土地でインターネットがありふれたものとなると同時に、
+地球内の情報転送が信じられないほどに安価なものとなりました。
+2009年に始まったビットコインのような技術志向の動向は、
+そのコミュニティの力を通じて、
+コンセンサスメカニズムと「ソーシャルコントラクト」の貢献的な側面に対して、
+インターネットを利用することで非中央集約型の価値転送システムを構築し、
+世界中で共有し、仮想的に自由に使用できる、という裏付けをしました。
+
+このシステムは、「暗号学的に強固なトランザクション基調の状態マシン」の特別版と言えます。
+
 Follow-up systems
 such as Namecoin adapted this original ``currency application'' of the technology
 into other applications albeit rather simplistic ones.
@@ -136,19 +138,43 @@ Early work on smart contracts has been done by \cite{szabo1997formalizing} and \
 
 \section{The Blockchain Paradigm} \label{ch:overview}
 
-Ethereum は、全体として、トランザクションを基調とした状態マシンである。
-生成状態から始め、ある最終状態へ写像変換するためにトランザクションを次々と実行するのである。
-その最終状態が、 Etereum の世界の主要な `` version ''として受け入れられるのだ。
-状態は、アカウントの残高 , 評判 , 信託 ,物理世界の情報のようなデータ
-The state can include such information as account balances, reputations, trust arrangements, data pertaining to information of the physical world; in short, anything that can currently be represented by a computer is admissible. Transactions thus represent a valid arc between two states; the `valid' part is important---there exist far more invalid state changes than valid state changes. Invalid state changes might, \eg be things such as reducing an account balance without an equal and opposite increase elsewhere. A valid state transition is one which comes about through a transaction. Formally:
+Ethereum は、全体としては、トランザクションを基調とした状態マシンでます。
+生成状態から始め、ある終状態へ写像変換するために、トランザクションを次々と実行します。
+その終状態が、 Etereum の世界の主要な `` version ''として受け入れられます。
+状態とは、アカウントの残高 , 評判 , 信託 ,物理世界の情報のようなデータを保持することが可能で、
+短くいえば、現在コンピュータで表現できるものは何でも保持できます。
+
+トランザクションはこのように二つの状態間をつなぐ有効な「橋」を表します。
+`有効な`というのはとても重要で---有効な状態変化よりも無効なものの方がはるかに多いのです。
+
+無効な状態変化とは、例えば、アカウントの残高が減った時に、同じ分だけ増える他方が、
+全く存在しないというようなものです。
+有効な状態遷移は、概ねトランザクションを通じて生成され、
+形式的には:
 \begin{equation}
 \boldsymbol{\sigma}_{t+1} \equiv \Upsilon(\boldsymbol{\sigma}_t, T)
 \end{equation}
-ここで $\Upsilon$  : Ethereum 状態遷移関数. Ethereum, $\Upsilon$, together with $\boldsymbol{\sigma}$ are considerably more powerful then any existing comparable system; $\Upsilon$ allows components to carry out arbitrary computation, while $\boldsymbol{\sigma}$ allows components to store arbitrary state between transactions.
 
-Transactions are collated into blocks; blocks are chained together using a cryptographic hash as a means of reference. Blocks function as a journal, recording a series of transactions together with the previous block and an identifier for the final state (though do not store the final state itself---that would be far too big). They also punctuate the transaction series with incentives for nodes to \textit{mine}. This incentivisation takes places as a state-transition function, adding value to a nominated account.
+ここで、$\Upsilon$  : Ethereum 状態遷移関数
 
-Mining is the process of dedicating effort (working) to bolster one series of transactions (a block) over any other potential competitor block. It is achieved thanks to a cryptographically secure proof. This scheme is known as a proof-of-work and is discussed in detail in section \ref{ch:pow}.
+Ethereum, つまり $\Upsilon$ は、 $\boldsymbol{\sigma}$ と一緒になることで現存の他の競合するシステムにないより強力なものとなります。
+
+$\Upsilon$ は、要素に対し任意の計算の実行を許可します。
+
+ $\boldsymbol{\sigma}$ は、要素に対しトランザクション間の任意の状態をstoreすることを許可します。
+
+トランザクションはブロックに集約されます。
+ブロックとブロックは、暗号学的ハッシュ値を参照方法として利用した、鎖で繋がれています。
+
+ブロックは記録簿として機能し、一連のトランザクションをまとめて、
+以前のブロックと終状態を表す識別子と一緒に、記録します。
+(しかしながら、終状態全てをstoreしているわけではない---というのはあまりにも大きすぎるからだ)。
+They also punctuate the transaction series with incentives for nodes to \textit{mine}.
+This incentivisation takes places as a state-transition function,
+adding value to a nominated account.
+
+Mining is the process of dedicating effort (working)
+to bolster one series of transactions (a block) over any other potential competitor block. It is achieved thanks to a cryptographically secure proof. This scheme is known as a proof-of-work and is discussed in detail in section \ref{ch:pow}.
 
 Formally, we expand to:
 \begin{eqnarray}
