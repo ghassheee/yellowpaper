@@ -65,8 +65,15 @@ Ethereum implements this paradigm in a generalised manner. Furthermore it provid
 
 
 
-\section{Introduction} \label{sec:introduction}
 
+
+
+
+
+
+
+\section{Introduction} \label{sec:introduction}
+\ \\
 
 世界中の数多の土地でインターネットがありふれたものとなると同時に、
 地球内の情報転送が信じられないほどに安価なものとなりました。
@@ -85,6 +92,14 @@ into other applications albeit rather simplistic ones.
 Ethereum is a project which attempts to build the generalised technology;
 technology on which all transaction-based state machine concepts may be built.
 Moreover it aims to provide to the end-developer a tightly integrated end-to-end system for building software on a hitherto unexplored compute paradigm in the mainstream: a trustful object messaging compute framework.
+
+
+
+
+
+
+
+
 
 
 
@@ -120,6 +135,12 @@ they can do so with absolute confidence in the possible outcomes and how those o
 
 
 
+
+
+
+
+
+
 \subsection{Previous Work} \label{ch:previous}
 
 \cite{buterin2013ethereum} first proposed the kernel of this work in late November, 2013. Though now evolved in many ways, the key functionality of a block-chain with a Turing-complete language and an effectively unlimited inter-transaction storage capability remains unchanged.
@@ -136,7 +157,17 @@ Early work on smart contracts has been done by \cite{szabo1997formalizing} and \
 
 %E language?
 
+
+
+
+
+
+
+
+
+\ \\
 \section{The Blockchain Paradigm} \label{ch:overview}
+\ \\
 
 Ethereum は、全体としては、トランザクションを基調とした状態マシンでます。
 生成状態から始め、ある終状態へ写像変換するために、トランザクションを次々と実行します。
@@ -151,9 +182,12 @@ Ethereum は、全体としては、トランザクションを基調とした�
 全く存在しないというようなものです。
 有効な状態遷移は、概ねトランザクションを通じて生成され、
 形式的には:
+
+\ \\
 \begin{equation}
 \boldsymbol{\sigma}_{t+1} \equiv \Upsilon(\boldsymbol{\sigma}_t, T)
 \end{equation}
+\ \\
 
 ここで、$\Upsilon$  : Ethereum 状態遷移関数
 
@@ -169,12 +203,14 @@ $\Upsilon$ は、要素に対し任意の計算の実行を許可します。
 ブロックは記録簿として機能し、一連のトランザクションをまとめて、
 以前のブロックと終状態を表す識別子と一緒に、記録します。
 (しかしながら、終状態全てをstoreしているわけではない---というのはあまりにも大きすぎるからだ)。
-They also punctuate the transaction series with incentives for nodes to \textit{mine}.
-This incentivisation takes places as a state-transition function,
-adding value to a nominated account.
+ブロックとブロックはノードが採掘するインセンティブによってトランザクションの連なりに対して区切りを挿入します。
+このインセンティブ挿入は状態遷移関数として実行され、
+報酬を受けるアカウントに対し価値を付与します。
 
+採掘は労力を費やすプロセスのことだ
 Mining is the process of dedicating effort (working)
-to bolster one series of transactions (a block) over any other potential competitor block. It is achieved thanks to a cryptographically secure proof. This scheme is known as a proof-of-work and is discussed in detail in section \ref{ch:pow}.
+to bolster one series of transactions (a block) over any other potential competitor block. 
+It is achieved thanks to a cryptographically secure proof. This scheme is known as a proof-of-work and is discussed in detail in section \ref{ch:pow}.
 
 Formally, we expand to:
 \begin{eqnarray}
@@ -186,6 +222,15 @@ B & \equiv & (..., (T_0, T_1, ...) ) \\
 Where $\Omega$ is the block-finalisation state transition function (a function that rewards a nominated party); $B$ is this block, which includes a series of transactions amongst some other components; and $\Pi$ is the block-level state-transition function.
 
 This is the basis of the blockchain paradigm, a model that forms the backbone of not only Ethereum, but all decentralised consensus-based transaction systems to date.
+
+
+
+
+
+
+
+
+
 
 \subsection{Value}
 
@@ -206,6 +251,14 @@ $10^{18}$ & Ether \\
 \par
 
 Throughout the present work, any reference to value, in the context of Ether, currency, a balance or a payment, should be assumed to be counted in Wei.
+
+
+
+
+
+
+
+
 
 \subsection{Which History?}
 
@@ -247,9 +300,24 @@ I define a number of useful functions throughout. One of the more common is $\el
 \ell(\mathbf{x}) \equiv \mathbf{x}[\lVert \mathbf{x} \rVert - 1]
 \end{equation}
 
+
+
+
+
+
+
+
+
 \section{Blocks, State and Transactions} \label{ch:bst}
 
 Having introduced the basic concepts behind Ethereum, we will discuss the meaning of a transaction, a block and the state in more detail.
+
+
+
+
+
+
+
 
 \subsection{World State} \label{ch:state}
 
@@ -300,6 +368,16 @@ where $v$ is the account validity function:
 \begin{equation}
 \quad v(x) \equiv x_n \in \mathbb{P}_{256} \wedge x_b \in \mathbb{P}_{256} \wedge x_s \in \mathbb{B}_{32} \wedge x_c \in \mathbb{B}_{32}
 \end{equation}
+
+
+
+
+
+
+
+
+
+
 
 \subsection{The Transaction} \label{ch:transaction}
 

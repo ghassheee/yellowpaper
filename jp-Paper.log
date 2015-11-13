@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013) (format=platex 2014.12.28)  13 NOV 2015 18:39
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013) (format=platex 2014.12.28)  13 NOV 2015 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -719,25 +719,25 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
 [1]
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 135.
+(Font)              using `JT1/mc/m/n' instead on input line 156.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 135.
+(Font)              using `JY1/mc/m/n' instead on input line 156.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <5> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 227.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 275.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <5> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 227.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 275.
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 []\OT1/cmr/m/n/9 Having in-tro-duced the ba-sic con-cepts be-hind
  []
 
 [3]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 4 might be wrong on input line 372.
+(multicol)                Footnotes on page 4 might be wrong on input line 447.
 
 
 
@@ -745,108 +745,108 @@ Overfull \vbox (4.76pt too high) has occurred while \output is active []
 
  [4]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 399.
+LaTeX Font Warning: Command \small invalid in math mode on input line 477.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 428.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 506.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 438.
+LaTeX Font Warning: Command \small invalid in math mode on input line 516.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 439.
+LaTeX Font Warning: Command \small invalid in math mode on input line 517.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 439.
+LaTeX Font Warning: Command \small invalid in math mode on input line 517.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 440.
+LaTeX Font Warning: Command \small invalid in math mode on input line 518.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 441.
+LaTeX Font Warning: Command \small invalid in math mode on input line 519.
 
 
-Overfull \hbox (4.18193pt too wide) detected at line 444
+Overfull \hbox (4.18193pt too wide) detected at line 522
 []
  []
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 448.
+LaTeX Font Warning: Command \small invalid in math mode on input line 526.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 448.
+LaTeX Font Warning: Command \small invalid in math mode on input line 526.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 453.
+LaTeX Font Warning: Command \small invalid in math mode on input line 531.
 
 [5]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 495.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 573.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 495.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 573.
 
 
-Overfull \hbox (1.53131pt too wide) detected at line 510
+Overfull \hbox (1.53131pt too wide) detected at line 588
 \OML/cmm/m/it/9 D\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 H\OT1/cmr/m/n/9 ) \OMS/cmsy/m/
 n/9 ^^Q []
  []
 
 [6] [7]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 697.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 775.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 697.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 775.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 700.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 778.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 700.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 778.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 707.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 785.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 707.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 785.
 
 [8]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 792.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 870.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 792.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 870.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 818.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 896.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 821.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 899.
 
 [9] [10]
-Overfull \hbox (5.9782pt too wide) detected at line 978
+Overfull \hbox (5.9782pt too wide) detected at line 1056
 \OML/cmm/m/it/9 D[]\OT1/cmr/m/n/9 (\OT1/cmr/bx/n/9 c\OML/cmm/m/it/9 ; i\OT1/cmr
 /m/n/9 ) \OMS/cmsy/m/n/9 ^^Q []
  []
 
 
-Overfull \hbox (5.45526pt too wide) detected at line 985
+Overfull \hbox (5.45526pt too wide) detected at line 1063
 \OML/cmm/m/it/9 N\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 i; w\OT1/cmr/m/n/9 ) \OMS/cmsy
 /m/n/9 ^^Q []
  []
 
 [11]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1108.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1186.
 
 
-Overfull \hbox (5.2667pt too wide) detected at line 1110
+Overfull \hbox (5.2667pt too wide) detected at line 1188
 \OT1/cmr/m/n/9 ^^@(\OML/cmm/m/it/9 B\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^Q []
  []
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1112.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1190.
 
 [12] [13] (./jp-Paper.bbl
 
@@ -894,145 +894,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--89
 
  []
 
-) [14]
+[14])
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1273.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1351.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1275.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1353.
 
 [15]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1291.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1369.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1291.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1369.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1293.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1371.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1297.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1375.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1310.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1388.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1310.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1388.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1312.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1390.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1312.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1390.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1317.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1395.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1317.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1395.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1317.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1395.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1327.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1405.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1330.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1408.
 
-LaTeX Font Info:    Try loading font information for U+euf on input line 1344.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/ueuf.fd
+[16]
+LaTeX Font Info:    Try loading font information for U+euf on input line 1422.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [16] [17]
+) [17]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1416.
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1420.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1494.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1423.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1498.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1423.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1501.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1436.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1501.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1440.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1514.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1445.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1518.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1446.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1523.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1464.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1524.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1466.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1466.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1466.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1468.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1469.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1470.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1542.
 
 [18]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1477.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1544.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1478.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1544.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1484.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1544.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1490.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1546.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1490.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1547.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1499.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1548.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1505.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1555.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1510.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1556.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1510.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1562.
 
 
-Overfull \hbox (40.7249pt too wide) in alignment at lines 1522--1560
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1568.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1568.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1577.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1583.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1588.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1588.
+
+
+Overfull \hbox (40.7249pt too wide) in alignment at lines 1600--1638
 [][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1522--1561
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1600--1639
 [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2237) has occurred while \output is active []
 
  [19]
-Overfull \hbox (28.9864pt too wide) detected at line 1597
+Overfull \hbox (28.9864pt too wide) detected at line 1675
 \OML/cmm/m/it/9 C\OT1/cmr/m/n/9 ([]\OML/cmm/m/it/9 ; []; I\OT1/cmr/m/n/9 ) \OMS
 /cmsy/m/n/9 ^^Q \OML/cmm/m/it/9 C[]\OT1/cmr/m/n/9 ([][]) \OMS/cmsy/m/n/9 ^^@ \O
 ML/cmm/m/it/9 C[]\OT1/cmr/m/n/9 ([][]) + []
@@ -1042,32 +1043,32 @@ ML/cmm/m/it/9 C[]\OT1/cmr/m/n/9 ([][]) + []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1611
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1689
 .
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1611.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1689.
 
  [21]
-Underfull \hbox (badness 10000) in alignment at lines 1649--1694
+Underfull \hbox (badness 10000) in alignment at lines 1727--1772
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1649--1695
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1727--1773
 [][] 
  []
 
 
-Overfull \hbox (25.80482pt too wide) in alignment at lines 1696--1736
+Overfull \hbox (25.80482pt too wide) in alignment at lines 1774--1814
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1696--1737
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1774--1815
 [][] 
  []
 
@@ -1076,25 +1077,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1743.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1821.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1738--1746
+Underfull \hbox (badness 10000) in alignment at lines 1816--1824
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1738--1747
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1816--1825
 [][] 
  []
 
 
-Overfull \hbox (29.28236pt too wide) in alignment at lines 1748--1802
+Overfull \hbox (29.28236pt too wide) in alignment at lines 1826--1880
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1748--1803
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1826--1881
 [][] 
  []
 
@@ -1102,12 +1103,12 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 1748--1803
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-Overfull \hbox (34.20691pt too wide) in alignment at lines 1804--1832
+Overfull \hbox (34.20691pt too wide) in alignment at lines 1882--1910
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1804--1833
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1882--1911
 [][] 
  []
 
@@ -1115,12 +1116,12 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 1804--1833
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-Underfull \hbox (badness 10000) in alignment at lines 1834--1888
+Underfull \hbox (badness 10000) in alignment at lines 1912--1966
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1834--1889
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1912--1967
 [][] 
  []
 
@@ -1128,12 +1129,12 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 1834--1889
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Underfull \hbox (badness 10000) in alignment at lines 1890--1913
+Underfull \hbox (badness 10000) in alignment at lines 1968--1991
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1890--1914
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1968--1992
 [][] 
  []
 
@@ -1141,32 +1142,32 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 1890--1914
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-Underfull \hbox (badness 10000) in alignment at lines 1915--1930
+Underfull \hbox (badness 10000) in alignment at lines 1993--2008
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1915--1931
+Overfull \hbox (12.0pt too wide) in paragraph at lines 1993--2009
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1932--1950
+Underfull \hbox (badness 10000) in alignment at lines 2010--2028
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1932--1951
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2010--2029
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1952--1970
+Underfull \hbox (badness 10000) in alignment at lines 2030--2048
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1952--1971
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2030--2049
 [][] 
  []
 
@@ -1174,12 +1175,12 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 1952--1971
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-Overfull \hbox (14.8293pt too wide) in alignment at lines 1972--2040
+Overfull \hbox (14.8293pt too wide) in alignment at lines 2050--2118
 [][][][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 1972--2041
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2050--2119
 [][] 
  []
 
@@ -1192,64 +1193,67 @@ Overfull \vbox (19.82185pt too high) has occurred while \output is active []
 
 [29]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 2049.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 2127.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 2049.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 2127.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 2049.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 2127.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 2052.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 2130.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 2052.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 2130.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 2052.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 2130.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 2060--2076
+Underfull \hbox (badness 10000) in alignment at lines 2138--2154
 [][][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 2060--2077
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2138--2155
 [][] 
  []
 
 [30]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2183.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2261.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2183.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2261.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2183.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2261.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2183.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2261.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2183.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2261.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 2183.
+LaTeX Font Warning: Command \small invalid in math mode on input line 2261.
 
 [31] [32] (./jp-Paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  13665 strings out of 494008
  244942 string characters out of 6154471
- 329851 words of memory out of 5000000
+ 328852 words of memory out of 5000000
  16653 multiletter control sequences out of 15000+600000
  22068 words of font info for 88 fonts, out of 8000000 for 9000
  906 hyphenation exceptions out of 8191
- 56i,23n,55p,1001b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,23n,55p,1001b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on jp-Paper.dvi (32 pages, 242212 bytes).
+Output written on jp-Paper.dvi (32 pages, 242476 bytes).
