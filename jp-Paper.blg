@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: jp-Paper.aux
+The style file: plainnat.bst
+Database file #1: Biblio.bib
+Warning--empty journal in back2002hashcash
+Warning--empty journal in buterin2013ethereum
+Warning--empty journal in dagger
+Warning--empty journal in hashimoto
+Warning--empty journal in FowlerNollVo1991FNVHash
+Warning--empty journal in lerner2014randmemohash
+Warning--empty journal in colouredcoins2012rosenfeld
+Warning--empty journal in mastercoin2013willett
+You've used 16 entries,
+            2773 wiz_defined-function locations,
+            675 strings with 7012 characters,
+and the built_in function-call counts, 5759 in all, are:
+= -- 513
+> -- 220
+< -- 17
++ -- 83
+- -- 66
+* -- 349
+:= -- 901
+add.period$ -- 58
+call.type$ -- 16
+change.case$ -- 70
+chr.to.int$ -- 15
+cite$ -- 40
+duplicate$ -- 329
+empty$ -- 551
+format.name$ -- 86
+if$ -- 1225
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 14
+newline$ -- 96
+num.names$ -- 64
+pop$ -- 172
+preamble$ -- 1
+purify$ -- 54
+quote$ -- 0
+skip$ -- 237
+stack$ -- 0
+substring$ -- 98
+swap$ -- 27
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 176
+warning$ -- 8
+while$ -- 54
+width$ -- 0
+write$ -- 214
+(There were 8 warnings)
