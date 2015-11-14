@@ -342,45 +342,42 @@ The scheme we use in order to generate consensus is a simplified version of the 
 \section{Conventions}\label{ch:conventions}
 \ \\
 
-私は形式的な表記に際し、数々の伝統的な書式を使用します。
+私は形式的な表記に際し、数々の書式の慣習を使用します。
 そのうちのいくつかは、現在の仕事に特化したものです。:
 
 
-ふたつの高度に構造化されたtop-level状態値である２つの集合は
+高度に構造化されたtop-levelの状態値（抽象変数）である２つの集合は
 ギリシア文字の太い小文字で表されます。
 これらはworld-stateの集合 $\boldsymbol{\sigma}$ と
 machine-stateの集合 $\boldsymbol{\mu}$ に仕分けされます。
 
+高構造化された値を扱う関数はギリシア語の大文字で表記します。
+例えば、$\Upsilon$ はEthereum状態遷移関数です。
 
+多くの関数には、大文字を使います。例として、$C$は一般コスト関数です。
+特別変数として異なる関数を表す場合は、例えば、$C_\text{\tiny SSTORE}$は
+{\tiny SSTORE}命令のコスト関数、のようにします。
 
-Functions operating on highly structured values are denoted with an upper-case greek letter,
-\eg $\Upsilon$, the Ethereum state transition function.
+外部定義可能な特別な関数は、例えば、
+Keccak-256ハッシュ関数（SHA-3コンテストで優勝した暗号関数による）は$\texttt{KEC}$とします。
+（また、単にKeccakと表記）
+同様に$\texttt{KEC512}$はKeccak 512ハッシュ関数を表します。
 
-For most functions, an uppercase letter is used, e.g. $C$, the general cost function.
-These may be subscripted to denote specialised variants, \eg $C_\text{\tiny SSTORE}$,
-the cost function for the {\tiny SSTORE} operation.
-For specialised and possibly externally defined functions,
-I may format as typewriter text,
-\eg the Keccak-256 hash function (as per the winning entry to the SHA-3 contest)
-is denoted $\texttt{KEC}$ (and generally referred to as plain Keccak).
-Also $\texttt{KEC512}$ is referring to the Keccak 512 hash function.
+タプルは大文字で表記される典型的なもので、
+例えば、$T$はEthereumトランザクションの表記に使います。
+この記号には、状況に応じて定義され、ひとつの要素を参照するような二次的表記あり、
+例えば、$T_n$は当該トランザクションのnonceを表します。
+この二次表記形式は、型の表記にも使用されます。
+例として大文字の二次表記は、タプル中の二次表記可能な要素を参照します。
 
-Tuples are typically denoted with an upper-case letter,
-\eg $T$, is used to denote an Ethereum transaction.
-This symbol may, if accordingly defined, be subscripted to refer to an individual component,
-\eg $T_n$, denotes the nonce of said transaction.
-The form of the subscript is used to denote its type;
-\eg uppercase subscripts refer to tuples with subscriptable components.
+スカラー値や固定長バイト列は標準書式の小文字で表記され、
+例えば、$n$はトランザクションのnonceの表記に使用されます。
+ある特別な意味合いを持たせたい場合はギリシア文字を用い、例えば、
+$\delta$は、与えられた命令でスタック上で必要とされるアイテムの数です。
 
-Scalars and fixed-size byte sequences (or, synonymously, arrays)
-are denoted with a normal lower-case letter,
-\eg $n$ is used in the document to denote a transaction nonce.
-Those with a particularly special meaning may be greek, \eg $\delta$,
-the number of items required on the stack for a given operation.
-
-Arbitrary-length sequences are typically denoted as a bold lower-case letter,
-\eg $\mathbf{o}$ is used to denote the byte-sequence given as the output data of a message call.
-For particularly important values, a bold uppercase letter may be used.
+任意長文字列は、ふつう太い小文字で表記され、
+例えば、$\mathbf{o}$はメッセージコールの出力値であるバイト列の表記に使われます。
+特に重要な値には、太い大文字が使われます。
 
 Throughout, we assume scalars are positive integers and thus belong to the set $\mathbb{P}$.
 The set of all byte sequences is $\mathbb{B}$, formally defined in Appendix \ref{app:rlp}.
