@@ -380,41 +380,38 @@ $\delta$は、与えられた命令でスタック上で必要とされるアイ
 例えば、$\mathbf{o}$は、メッセージコールの出力値であるバイト列の表記に使われます。
 特に重要な値には、太い大文字が使われます。
 
-Throughout, we assume scalars are positive integers and thus belong to the set $\mathbb{P}$.
-The set of all byte sequences is $\mathbb{B}$, formally defined in Appendix \ref{app:rlp}.
-If such a set of sequences is restricted to those of a particular length,
-it is denoted with a subscript,
-thus the set of all byte sequences of length $32$ is named $\mathbb{B}_{32}$
-and the set of all positive integers smaller than $2^{256}$ is named $\mathbb{P}_{256}$.
-This is formally defined in section \ref{ch:block}.
+一貫して、スカラー値は正の整数値であり、つまり集合$\mathbb{P}$の要素となる。
+バイト列の全集合は$\mathbb{B}$であり、Appendix \ref{app:rlp}で形式的に定義されている。
+それらのデータの集合がある特定の長さである場合、二次表記を用いて、
+全バイト列長が$32$である場合には$\mathbb{B}_{32}$と表記され、
+$2^{256}$より小さい正整数の全集合は、$\mathbb{P}_{256}$と命名しています。
+これは、\ref{ch:block}章で形式的に定義します。
 
-Square brackets are used to index into and reference individual components
-or subsequences of sequences,
-\eg $\boldsymbol{\mu}_\mathbf{s}[0]$ denotes the first item on the machine's stack.
-For subsequences, ellipses are used to specify the intended range,
-to include elements at both limits,
-\eg $\boldsymbol{\mu}_\mathbf{m}[0..31]$ denotes the first 32 items of the machine's memory.
+角型の括弧は個々の要素や2次列の参照に使用されます
+。
+例 $\boldsymbol{\mu}_\mathbf{s}[0]$はmachine stack上の最初のアイテムを表します。
+二次列には、範囲を表すのに省略符号が使用され、両端の極限値も含みます。
+例 $\boldsymbol{\mu}_\mathbf{m}[0..31]$はmachine memoryの最初の32個のアイテムを表します。
 
-In the case of the global state $\boldsymbol{\sigma}$,
-which is a sequence of accounts, themselves tuples,
-the square brackets are used to reference an individual account.
+global state $\boldsymbol{\sigma}$の場合、
+それはアカウント列であり、それ自身タプルであり、
+角型の括弧は、個々のアカウントを参照するために使います。
 
-When considering variants of existing values,
-I follow the rule that within a given scope for definition,
-if we assume that the unmodified `input' value be denoted by the placeholder $\Box$
-then the modified and utilisable value is denoted as $\Box'$,
-and intermediate values would be $\Box^*$,  $\Box^{**}$ \&c.
-On very particular occasions, in order to maximise readability and only if unambiguous in meaning,
-I may use alpha-numeric subscripts to denote intermediate values,
-especially those of particular note.
+ある値の細かな違いを考えるとき、
+あるスコープを定義に加えた規則に従います。
+前処理の施していない入力値が$\Box$とすると
+$\Box'$は処理を施し使える状態となった値を表します。
+また中間の値は$\Box^*$や$\Box^{**}$などと表記します。
+特別な状況に置いては、可読性を高めるためにあるいは意味合いの一義性を確保するために、
+アルファ数字の二次表記を中間の値を表すのに使用します。
+これは、非常に注意してほしい場合におけるものです。
 
-When considering the use of existing functions, given a function $f$,
-the function $f^*$ denotes a similar,
-element-wise version of the function mapping instead between sequences.
-It is formally defined in section \ref{ch:block}.
+ある$f$という関数を考える場合、$f^*$は、引数の範囲がデータ列に限らない、
+よく似た、引数の幅が広い、より抽象化された関数写像を表します。
+\ref{ch:block}章で形式的に定義します。
 
-I define a number of useful functions throughout.
-One of the more common is $\ell$, which evaluates to the last item in the given sequence:
+私は始終、幾多の役立つ関数を定義します。
+よくつかうものとしては、$\ell$、与えられたデータ列の最後のアイテムを評価し、返します。
 
 \ \\
 \begin{equation}
