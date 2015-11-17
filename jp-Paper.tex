@@ -411,7 +411,7 @@ $\Box'$は処理を施し使える状態となった値を表します。
 \ref{ch:block}章で形式的に定義します。
 
 私は始終、幾多の役立つ関数を定義します。
-よくつかうものとしては、$\ell$、与えられたデータ列の最後のアイテムを評価し、返します。
+よくつかうものとして$\ell$があり、与えられたデータ列の最後のアイテムを評価し、返します。
 
 \ \\
 \begin{equation}
@@ -429,7 +429,7 @@ $\Box'$は処理を施し使える状態となった値を表します。
 \section{Blocks, State and Transactions} \label{ch:bst}
 \ \\
 
-Having introduced the basic concepts behind Ethereum, we will discuss the meaning of a transaction, a block and the state in more detail.
+Ethereumの背景にある概念を説明してきたので、transaction, block, stateの意味について詳細に議論する。
 
 
 
@@ -437,34 +437,73 @@ Having introduced the basic concepts behind Ethereum, we will discuss the meanin
 
 
 
-
+\ \\
 \subsection{World State} \label{ch:state}
 
-The world state (\textit{state}), is a mapping between addresses (160-bit identifiers) and account states (a data structure serialised as RLP, see Appendix \ref{app:rlp}). Though not stored on the blockchain, it is assumed that the implementation will maintain this mapping in a modified Merkle Patricia tree (\textit{trie}, see Appendix \ref{app:trie}). The trie requires a simple database backend that maintains a mapping of bytearrays to bytearrays; we name this underlying database the state database. This has a number of benefits; firstly the root node of this structure is cryptographically dependent on all internal data and as such its hash can be used as a secure identity for the entire system state. Secondly, being an immutable data structure, it allows any previous state (whose root hash is known) to be recalled by simply altering the root hash accordingly. Since we store all such root hashes in the blockchain, we are able to trivially revert to old states.
+world state (\textit{state})はアドレス（160バイトの識別子）から、
+アカウントの状態（RLPとして識別番号が付与されたデータ構造、Appendix \ref{app:rlp}参照）を返す写像です。
+ブロックチェーン上にはstoreされませんが、
+実装に際し、この写像は、パトリシア木(\textit{trie}, \ref{app:trie}参照)の中で保持されます。
+このtrieは、バイト配列からバイト配列への写像を保持するデータベースバックエンドを要します。
+このデータベースをstateデータベースと命名します。
+これにはたくさんの利点があります。
+まずこのtrie構造のroot nodeは、暗号学的にすべての内部データに依存しており、それが故、
+そのハッシュ値は全システムの状態を強固に管理する識別番号として利用できます。
+つぎに、変更が加えられることのないデータ構造なので、
+root hashを単に置き換えることにより、それ以前のすべての状態を呼び出すことができます。
+ブロックチェーン上に以前のroot hashをstoreしてあるので
+些細な変更で前の状態に戻すことができます。
 
-The account state comprises the following four fields:
+アカウントの状態は次の4つのフィールドにより構成されます。
 
 \begin{description}
-\item[nonce] A scalar value equal to the number of transactions sent from this address or, in the case of accounts with associated code, the number of contract-creations made by this account. For account of address $a$ in state $\boldsymbol{\sigma}$, this would be formally denoted $\boldsymbol{\sigma}[a]_n$.
-\item[balance] A scalar value equal to the number of Wei owned by this address. Formally denoted $\boldsymbol{\sigma}[a]_b$.
-\item[storageRoot] A 256-bit hash of the root node of a Merkle Patricia tree that encodes the storage contents of the account (a mapping between 256-bit integer values), encoded into the trie as a mapping from the Keccak 256-bit hash of the  256-bit integer keys to the RLP-encoded 256-bit integer values. The hash is formally denoted $\boldsymbol{\sigma}[a]_s$.
-\item[codeHash] The hash of the EVM code of this account---this is the code that gets executed should this address receive a message call; it is immutable and thus, unlike all other fields, cannot be changed after construction. All such code fragments are contained in the state database under their corresponding hashes for later retrieval. This hash is formally denoted $\boldsymbol{\sigma}[a]_c$, and thus the code may be denoted as $\mathbf{b}$, given that $\texttt{\small KEC}(\mathbf{b}) = \boldsymbol{\sigma}[a]_c$.
+\item[nonce]
+スカラー値で、このアカウントのアドレスから送られたトランザクション番号に等しい。
+あるいは、アカウントがコードと連携している場合は、
+このアカウントが作成するcontract-creations番号に等しい。
+アカウントのアドレスが$a$で、状態$\boldsymbol{\sigma}$にあるとき、
+これは形式的に$\boldsymbol{\sigma}[a]_n$と表記します。
+\item[balance]
+スカラー値で、アカウントのアドレスにより所有されるWeiの数量に等しい。
+形式的に$\boldsymbol{\sigma}[a]_b$と表記します。
+\item[storageRoot]
+アカウントのstorageの中身を符号化した
+パトリシア木のルートノードの256bitハッシュ値を格納した配列（256bit integer 値間の写像）です。
+この値は、
+「256bit Integer値の鍵をKeccak256bitハッシュにかけた値から、RLP符号化された256bit Integer値への写像」として、
+trieの中に符号化されています。
+アドレスを入力値としてストレージルートを返す。
+このハッシュ値は形式的に$\boldsymbol{\sigma}[a]_s$と表記します。
+\item[codeHash]
+アカウントのEVM codeのハッシュ値です---
+ここで言うコードはアカウントのアドレスがメッセージコールをうけとると実行されるコードです
+これは変更不可能です。他の３つのフィールドと異なり、コンストラクションの後は一切変更できません。
+コードの断片はすべて、それら各々のハッシュ値の下にあるstateデータベースに含まれ、
+最新のデータ取得ができます。
+このハッシュ値は形式的には、$\boldsymbol{\sigma}[a]_c$と表記し、
+ここでいうところのコードを$\mathbf{b}$とすると、
+$\texttt{\small KEC}(\mathbf{b}) = \boldsymbol{\sigma}[a]_c$で与えられます。
 \end{description}
 
-Since I typically wish to refer not to the trie's root hash but to the underlying set of key/value pairs stored within, I define a convenient equivalence:
+trieのルートハッシュを参照するのでなく、内部にあるkey/valueペアを参照したいので、
+次のように簡略化した表記を定義します。
+
 \begin{equation}
 \texttt{\small TRIE}\big(L_I^*(\boldsymbol{\sigma}[a]_\mathbf{s})\big) \equiv \boldsymbol{\sigma}[a]_s
 \end{equation}
 
-The collapse function for the set of key/value pairs in the trie, $L_I^*$, is defined as the element-wise transformation of the base function $L_I$, given as:
+trieにおけるkey/valueペアを引数にとる崩壊関数である$L_I^*$は、
+基礎となる関数$L_I$の要素の幅が広い変換したものとして定義されます。
+
 \begin{equation}
 L_I\big( (k, v) \big) \equiv \big(\texttt{\small KEC}(k), \texttt{\small RLP}(v)\big)
 \end{equation}
 
-where:
+ここで:
 \begin{equation}
 k \in \mathbb{B}_{32} \quad \wedge \quad v \in \mathbb{P}
 \end{equation}
+
 
 It shall be understood that $\boldsymbol{\sigma}[a]_\mathbf{s}$ is not a `physical' member of the account and does not contribute to its later serialisation.
 
